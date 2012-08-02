@@ -1,0 +1,35 @@
+Backing up my vim plugins because I will miss it dearly if I ever lose my laptop.
+But if you are a Rails dev and have previously used Sublime Text2, my plugins 
+might be very useful.
+
+Also I believe it is a good entry plugins for new vim users. It even has 100+ colorschemes!
+
+
+Notable Plugin list.
+
+* CtrlP     :   Make file navigation a breeze. Similar to cmd+P in Sublime Text 2
+* Ack       :   Allows search through directory. It is faster than GREP(needs proof on this).
+* snipMate  :   Allows snippet auto completion. Allows super fast coding.
+* surround  :   Efficiently puts surround html tag.
+* tcomment  :   Commenting your code will be a breeZe
+* nerdtree  :   Those little sidebars on the left.
+* zencoding :   Enough said
+
+
+
+Notable Map binding(based on Mac) (I used MacVim)
+
+*  Ctrl + b :  run 'bundle install' on MacVim
+*  CMD  + d :  :vsplit
+*  CMD  + D :  :hsplit(horizontal split)
+*  CMD  + j :  CTRL_W+w (navigate through split views)
+
+*  CMD  + k :  NerdTree toggle
+*  CMD  + t :  CtrlP
+
+
+Miscellaneous 
+
+* There are 100+ color schemes
+* Javascript - wombat
+* Ruby - twilight, railscast
