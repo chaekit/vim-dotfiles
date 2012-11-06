@@ -119,13 +119,13 @@ syn keyword pythonStatement	pass raise
 syn keyword pythonStatement	global assert
 syn keyword pythonStatement	lambda yield
 syn keyword pythonStatement	with
+syn keyword pythonStatement and in is not or 
 syn keyword pythonStatement	def class nextgroup=pythonFunction skipwhite
 syn match   pythonFunction	"[a-zA-Z_][a-zA-Z0-9_]*" display contained
 syn keyword pythonRepeat	for while
 syn keyword pythonConditional	if elif else
-syn keyword pythonPreCondit	import from as
+syn keyword pythonPreCondit	import from as self
 syn keyword pythonException	try except finally
-syn keyword pythonOperator	and in is not or
 
 if !exists("python_print_as_function") || python_print_as_function == 0
   syn keyword pythonStatement print
@@ -315,7 +315,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   endif
 
   HiLink pythonStatement	Statement
-  HiLink pythonPreCondit	Statement
+  HiLink pythonPreCondit	PreCondit
   HiLink pythonFunction		Function
   HiLink pythonConditional	Conditional
   HiLink pythonRepeat		Repeat

@@ -89,12 +89,12 @@ syntax keyword javaScriptType           const undefined var void yield
 syntax keyword javaScriptOperator       delete new in instanceof let typeof
 syntax keyword javaScriptBoolean        true false
 syntax keyword javaScriptNull           null
-syntax keyword javaScriptThis           this
+syntax keyword javaScriptThis           this return google document window console
 
 "" Statement Keywords
 syntax keyword javaScriptConditional    if else
 syntax keyword javaScriptRepeat         do while for
-syntax keyword javaScriptBranch         break continue switch case default return
+syntax keyword javaScriptBranch         break continue switch case default 
 syntax keyword javaScriptStatement      try catch throw with finally
 
 syntax keyword javaScriptGlobalObjects  Array Boolean Date Function Infinity JavaArray JavaClass JavaObject JavaPackage Math Number NaN Object Packages RegExp String Undefined java netscape sun
@@ -203,7 +203,7 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink javaScriptDocSeeTag            Function
   HiLink javaScriptDocType              Type
   HiLink javaScriptDocTypeNoParam       Type
-  HiLink javaScriptDocParam             Label
+  HiLink javaScriptDocParam             Type
   HiLink javaScriptStringS              String
   HiLink javaScriptStringD              String
   HiLink javaScriptTernaryIfOperator    Conditional
@@ -221,9 +221,9 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink javaScriptParensErrA           Error
   HiLink javaScriptParensErrB           Error
   HiLink javaScriptParensErrC           Error
-  HiLink javaScriptOperator             Operator
+  HiLink javaScriptOperator             Conditional
   HiLink javaScriptType                 Type
-  HiLink javaScriptThis                 Type
+  HiLink javaScriptThis                 PreCondit
   HiLink javaScriptNull                 Type
   HiLink javaScriptNumber               Number
   HiLink javaScriptFloat                Number
@@ -236,7 +236,7 @@ if version >= 508 || !exists("did_javascript_syn_inits")
 
   HiLink javaScriptDomErrNo             Constant
   HiLink javaScriptDomNodeConsts        Constant
-  HiLink javaScriptDomElemAttrs         Label
+  HiLink javaScriptDomElemAttrs         Statement
   HiLink javaScriptDomElemFuncs         PreProc
 
   HiLink javaScriptHtmlEvents           Special
@@ -260,5 +260,12 @@ let b:current_syntax = "javascript"
 if main_syntax == 'javascript'
   unlet main_syntax
 endif
+
+" let g:ophigh_color = "#de935f"
+" 
+" syntax match OperatorChars "?\|+\|-\|\*\|;\|,\|<\|>\|&\||\|!\|\~\|%\|=\|)\|(\|{\|}\|\.\|\[\|\]\|/\(/\|*\)\@!"
+" exec "hi OperatorChars guifg=" . g:ophigh_color . " gui=NONE ctermfg=173"
+" syntax match Braces ")\|(\|{\|}\|\[\|\]\|/\(/\|*\)\@!"
+" exec "hi Braces guifg=#81a2be gui=NONE ctermfg=110"
 
 " vim: ts=4
