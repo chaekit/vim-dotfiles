@@ -146,7 +146,8 @@ set t_Co=256
 "let g:solarized_contrast="high"
 "colors base16-solarized
 "colors solarized
-colors Tomorrow-Night-Eighties
+"colors Tomorrow-Night-Eighties
+colors railscasts
 
 "
 " ==========================================================

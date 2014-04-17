@@ -762,6 +762,8 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key>@l</key>
+			<string>selectLine:</string>
 			<key>@</key>
 			<string>moveToBeginningOfDocument:</string>
 			<key>@</key>
