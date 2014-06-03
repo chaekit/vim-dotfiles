@@ -124,7 +124,7 @@ syn keyword pythonStatement	def class nextgroup=pythonFunction skipwhite
 syn match   pythonFunction	"[a-zA-Z_][a-zA-Z0-9_]*" display contained
 syn keyword pythonRepeat	for while import from as self and in is not or 
 syn keyword pythonConditional	if elif else
-"syn keyword pythonPreCondit	import from as self
+syn keyword pythonPreCondit	import from as self
 syn keyword pythonException	try except finally
 
 if !exists("python_print_as_function") || python_print_as_function == 0

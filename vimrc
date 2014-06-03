@@ -3,8 +3,9 @@ filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-" set background=dark
+set background=dark
 
+colors railscasts
 
 set nocompatible
 " let Vundle manage Vundle
@@ -30,6 +31,9 @@ Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'toyamarinyon/vim-swift'
+
 " Python
 "
 Bundle 'davidhalter/jedi-vim'
@@ -43,6 +47,8 @@ filetype plugin indent on     " required!
 let g:user_zen_expandabbr_key = '<c-e>' 
 let g:use_zen_complete_tag = 1
 set number
+
+colors base16-railscasts
 
 " Vim airline
 let g:airline_powerline_fonts = 1
@@ -65,6 +71,8 @@ if has("gui_running")
   nnoremap <D-d> :vsp <cr>
   nnoremap <D-D> :split <cr>
   nnoremap <C-r> :ClearCtrlPCache <cr>
+  " colors solarized
+  colors base16-railscasts
 endif
 
 
@@ -126,7 +134,6 @@ let g:UltiSnipsExpandTrigger="<c-t>"
 " ==========================================================
 "
 
-
 au BufRead,BufNewFile *.hamlc set ft=haml
 au BufRead,BufNewFile *.mobile.erb set filetype=html.eruby.javascript.javascript-jquery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
@@ -142,12 +149,11 @@ au BufRead,BufNewFile *.maude set ft=maude
 
 syntax enable
 set t_Co=256
-"let g:solarized_termcolors=256
-"let g:solarized_contrast="high"
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
 "colors base16-solarized
 "colors solarized
 "colors Tomorrow-Night-Eighties
-colors railscasts
 
 "
 " ==========================================================
@@ -177,3 +183,4 @@ filetype indent on
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
+highlight LineNr ctermbg=235
