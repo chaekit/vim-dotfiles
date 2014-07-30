@@ -71,3 +71,5 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/jaychae/.rvm/bin
+
+alias rake="noglob rake"

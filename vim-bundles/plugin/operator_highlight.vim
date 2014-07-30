@@ -89,6 +89,8 @@ autocmd FileType coffee call s:HighlightOperators()
 autocmd FileType cpp call s:HighlightOperators()
 autocmd FileType c call s:HighlightOperators()
 autocmd FileType scala call s:HighlightOperators()
+autocmd FileType haskell call s:HighlightOperators()
+autocmd FileType go call s:HighlightOperators()
 " autocmd FileType ruby call s:RubyHighlightOperators()
 augroup end
 

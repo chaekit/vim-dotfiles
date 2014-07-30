@@ -33,6 +33,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'toyamarinyon/vim-swift'
+Bundle 'fatih/vim-go'
 
 " Python
 "
@@ -97,7 +98,6 @@ au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
 au FileType yaml setl sw=2 ts=2 et
 au FileType javascript setl sw=2 sts=2 et
-au FileType javascript call JavaScriptFold()
 au FileType html setl sw=2 sts=2 et
 au FileType scss setl sw=2 sts=2 et
 au FileType coffee setl sw=2 sts=2 et
@@ -140,6 +140,7 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.html set ft=html
 au BufRead,BufNewFile *.html set ft=htmljinja.html
+au BufRead,BufNewFile *.html set ft=ejs.html
 au BufRead,BufNewFile *.maude set ft=maude
 
 "

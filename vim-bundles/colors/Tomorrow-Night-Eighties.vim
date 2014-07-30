@@ -339,7 +339,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" JavaScript Highlighting
 	call <SID>X("coffeeSpecialIdent", s:blue, "", "")
 	call <SID>X("coffeeObjAssign", s:purple, "", "")
-	call <SID>X("coffeeObject", s:aqua, "", "")
+	call <SID>X("coffeeObject", s:yellow, "", "")
 	call <SID>X("coffeeConditional", s:red, "", "")
 	call <SID>X("coffeeStatement", s:red, "", "")
 	call <SID>X("coffeeRepeat", s:red, "", "")
